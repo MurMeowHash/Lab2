@@ -3,28 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <link href="general_styles.css" rel="stylesheet">
-    <link href="styles_flex.css" rel="stylesheet">
-    <title>Lab1</title>
+    <link href="styles_plane.css" rel="stylesheet">
+    <title>Lab2 plane</title>
 </head>
-<body>
-    <div>
-        <header style="float: left; width: 49%;" class="textContainer" id="header">
-            <h2 class="motto">OpenGL API</h2>
-            <menu>
-                <li><a href="index.html">What is OpenGL</a></li>
-                <li><a href="openGL_design.html">Design</a></li>
-                <li><a href="industry_support.html">Industry support</a></li>
-                <li><a href="vulkan.html">Vulkan</a></li>
-                <li><a href="app_examples.html">Apps</a></li>
-            </menu>
-        </header>
-        <footer style="float: left; width: 49%;" class="textContainer" id="footer">
-            <a href="https://www.khronos.org/opengl/wiki/Getting_Started">Getting started</a>
-            <h2 class="motto">OpenGL API</h2>
-        </footer>
+<body class="layoutTable">
+<header class="layoutRow" id="header">
+    <div class="textContainer mottoContainer layoutCell">
+        <h2 class="motto headerMotto">OpenGL API</h2>
+        <menu>
+            <li><a href="index.html">Initial layout</a></li>
+            <li><a href="flex.html">Flex layout</a></li>
+            <li><a href="grid.html">Grid layout</a></li>
+            <li><a href="plane.html">Plane layout</a></li>
+        </menu>
     </div>
-<div class="flexRowAlignedContent">
-    <nav class="textContainer sideContainer leftAlignedContent" id="links">
+</header>
+<div class="layoutRow layoutTable">
+    <nav class="textContainer sideContainer layoutCell" id="links">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel diam magna. Vestibulum maximus
             nibh in sollicitudin consectetur. Phasellus eget nibh ut sapien interdum maximus. Nulla facilisi.
             Nunc congue et sem nec ullamcorper. Pellentesque elit justo, dictum non molestie ac, placerat in ligula.
@@ -33,22 +28,26 @@
             Proin congue, risus id aliquet sodales, diam magna bibendum lorem, vitae fermentum ipsum mi ac justo.
             Ut dui ligula, congue et odio sed, maximus efficitur orci.</p>
     </nav>
-    <div class="flexColumnAlignedContent" id="mainContent">
-        <div class="textContainer rightAlignedContent" id="brief">
-            <h3>What is OpenGL and it's contributors</h3>
+    <div class="layoutCell layoutTable" id="mainContent">
+        <div class="layoutRow">
+            <div class="textContainer layoutCell" id="brief">
+                <h3>What is OpenGL and it's contributors</h3>
+            </div>
         </div>
-        <div class="flexRowAlignedContent">
-            <article class="textContainer articleContentLayout" id="article">
-                <p>OpenGL is a cross-language, cross-platform application programming interface (API) for
+        <div class="layoutRow">
+            <article class="textContainer layoutCell" id="article">
+                <p class="layoutCell articleItem">OpenGL is a cross-language, cross-platform application programming interface (API) for
                     rendering 2D and 3D vector graphics. The API is typically used to interact with a
                     graphics processing unit (GPU), to achieve hardware-accelerated rendering. Silicon Graphics,
                     Inc. (SGI) began developing OpenGL in 1991 and released it on June 30, 1992. It is used
                     for a variety of applications, including computer-aided design (CAD), video games,
                     scientific visualization, virtual reality, and flight simulation. Since 2006, OpenGL has
                     been managed by the non-profit technology consortium Khronos Group.</p>
-                <img src="images/openGL_khronos.png" alt="OpenGL" class="articleImage">
+                <div class="layoutCell articleItem">
+                    <img src="images/openGL_khronos.png" alt="OpenGL" class="articleImage">
+                </div>
             </article>
-            <div class="textContainer sideContainer leftAlignedContent" id="sideBar">
+            <div class="textContainer sideContainer layoutCell" id="sideBar">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel diam magna. Vestibulum maximus
                     nibh in sollicitudin consectetur. Phasellus eget nibh ut sapien interdum maximus. Nulla facilisi.
                     Nunc congue et sem nec ullamcorper. Pellentesque elit justo, dictum non molestie ac, placerat in ligula.
@@ -60,5 +59,11 @@
         </div>
     </div>
 </div>
+<footer class="layoutRow" id="footer">
+    <div class="textContainer mottoContainer layoutCell">
+        <a class="mottoContent" href="https://www.khronos.org/opengl/wiki/Getting_Started">Getting started</a>
+        <h2 class="motto footerMotto">OpenGL API</h2>
+    </div>
+</footer>
 </body>
 </html>
